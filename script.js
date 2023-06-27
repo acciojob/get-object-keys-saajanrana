@@ -1,18 +1,10 @@
 //your JS code here. If required.
-const express = require('express');
-const path = require('path');
+Object.prototype.getKeys = function(){
+    return Object.keys(this);
+}
 
-const app = express();
-
-app.use(express.static(__dirname))
-
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + '/main.html'));
-});
-//your code here
-app.post('/add', (req, res) => {
-  const {a,b} = req.body;
-  res.status(200).send(a+b);
-  // res.sendFile(path.join(__dirname + '/main.html'));
-});
-module.exports = app;
+let student = {
+    name: "John Doe",
+    // age: 20,
+    // grade: 10,
+}
