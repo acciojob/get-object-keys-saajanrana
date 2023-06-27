@@ -5,6 +5,6 @@ Object.prototype.getKeys = function(){
 
 let student = {
     name: "John Doe",
-    // age: 20,
-    // grade: 10,
+    age: 20,
+    grade: 10,
 }
